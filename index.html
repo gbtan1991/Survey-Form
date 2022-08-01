@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,27 +20,30 @@
 
 <main>
   <div class="containter">
-    <img src="https://1images.pexels.com/photos/210661/pexels-photo-210661.jpeg?cs=srgb&dl=pexels-picjumbocom-210661.jpg&fm=jpg" alt="writing hands" class="signingImage"/>
+      <img src="https://1images.pexels.com/photos/210661/pexels-photo-210661.jpeg?cs=srgb&dl=pexels-picjumbocom-210661.jpg&fm=jpg" alt="writing hands" class="signingImage"/>
 
-    
-    <h1 id="title">GT Survey Form</h1>
-    <p id="description" class="description">Survey sample</p>
-  
+          <div class="header">
+          <h1 id="title">GT Survey Form</h1>
+          <p id="description" class="description">Survey sample</p>
+          </div>
 
+    <form id="survey-form"></form>
+    <div class="surveyForm">
     
-    <form id="survey-form">
-      <div>
-        <label id="name-label">Name:</label><input type="text" id="name" placeholder="Enter your Name" required></div>
-      <div>
-        <label id="email-label">Email:</label><input type="email" id="email" placeholder="Enter your Email" required></div>
-      <div>
-        <label id="number-label">Age:</label><input type="number" id="number" placeholder="Age" min="1" max="99"></div>
+      
+        <label id="name-label">Name:</label><input type="text" id="name" placeholder="Enter your Name" required>
+      
+        <label id="email-label">Email:</label><input type="email" id="email" placeholder="Enter your Email" required>
+      
+        <label id="number-label">Age:</label><input type="number" id="number" placeholder="Age" min="1" max="99">
       
       <select id="dropdown">
         <option value="Student">Student</option>
         <option value="Freelancer">Freelancer</option>
       </select>
-      
+    </div>
+
+    <div class="SurveyOptions">
       <input type="radio" name="a" value="Section A"><label></label>
       <input type="radio" name="a" value="Section A"><label></label>
        <input type="radio" name="a" value="Section A"><label></label>
@@ -45,17 +51,20 @@
       <input type="checkbox" name="a" value="Section A"><label></label>
       <input type="checkbox" name="a" value="Section A"><label></label>
        <input type="checkbox" name="a" value="Section A"><label></label>
+      </div>
       
+      <div class="surveySuggestions">
       <textarea></textarea>
       
       <input type="submit" id="submit">
-      
-      
-    </form>
+      </div>
+        
+   
 
-    </div>
-</main>   
+  </form>
 </div>
+</main>   
+
 </body>
 
 
