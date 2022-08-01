@@ -1,14 +1,33 @@
-*, *::before, *::after{ box-sizing: inherit;}
-
-html{
-    box-sizing: border-box;
+:root{
+    --eggplant: hsla(321, 13%, 25%, 1);
+    --polished-pine: hsla(169, 22%, 49%, 1);
+    --ash-gray: hsla(140, 10%, 66%, 1);
+    --pale-silver: hsla(15, 13%, 76%, 1);
+    --desert-sand: hsla(19, 61%, 79%, 1);
 }
 
 
+*, *::before, *::after{ 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Mukta", sans-serif;
+}
+
+
+
+
 body{
-    background-image: url(https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    background-size: 100%, 100%;
+    /* background */
+    background: hsl(0, 0%, 100%);
+    background: linear-gradient(45deg, var(--eggplant), var(--desert-sand));
     background-repeat: no-repeat;
-    
+    padding: 2em;
+   
+}
+
+.container{
+
+    max-width: 600px;
     
 }
