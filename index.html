@@ -4,21 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
-
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap" rel="stylesheet">
-    
     <title>Survey Form</title>
-    
 </head>
+
+
 <body>
-
-
 <main>
+  <div class="container">
+    <img src="https://1images.pexels.com/photos/210661/pexels-photo-210661.jpeg?cs=srgb&dl=pexels-picjumbocom-210661.jpg&fm=jpg" alt="writing hands" srcset="">
+    
+    <div class="header">
+      <h1>Company Survey Form</h1> <!-- You should have a page title in an h1 element with an id of title -->
+      <p>Kindly fill up the survey form!</p> <!-- You should have a short explanation in a p element with an id of description -->
+    </div>
+    
+    
+    <div class="content">
+      <form id="survey-form" action="#"> <!-- You should have a form element with an id of survey-form -->
+        <div class="field">
+          <label for="name-label" id="name-label">Name</label><input type="text" name="name" id="name" placeholder="Enter your name" required/>
+          <label for="email-label" id="email-label">Email</label><input type="email" name="email" id="email" placeholder="Enter your email" required/>
+          <label for="number-label" id="number-label">Age(Optional)</label><input type="number" name="number" id="number" placeholder="Input your Age" />
+
+          <label for="role-label" id="role-label">What is the role youre looking for?</label>
+          <select name="role" id="role">
+            <option value="">Please select an option</option>
+            <option value="web-designer">Web Designer</option>
+            <option value="web-developer">Web Developer</option>
+            <option value="tech-support">Tech Support</option>
+            <option value="multiple-skills">Multiple Skills</option>
+            
+            
+          </select>
+        
+          <h3>Would you recommend me to your friends?</h3>
+          <input type="radio" name="recommend" value="absolutely" checked="checked" /><label for="absolutely" id="absolutely">Absolutely</label>
+          <input type="radio" name="recommend" value="maybe" /><label for="maybe" id="maybe">Maybe</label>
+          <input type="radio" name="recommend" value="not-sure" /><label for="not-sure" id="not-sure">Not sure</label>
+
+          
+          <h3>What are your suggested topics that I can thrive to?</h3>
+          <input type="checkbox" name="suggested-topics" value="front-end" /><label for="suggested-topics" id="suggested-topics">Front-End Topics</label>
+          <input type="checkbox" name="suggested-topics" value="back-end" /><label for="suggested-topics" id="suggested-topics">Back-End Topics</label>
+          <input type="checkbox" name="suggested-topics" value="data-algorithm" /><label for="suggested-topics" id="suggested-topics">Data Algorithm</label>
+          <inpu"t type="checkbox" name="suggested-topic" value="computer-science" /><label for="suggested-topic" id="suggested-topic">Computer Science</label>
+
+
+          <label for="comments" id="comments">Any comments or suggestions</label>
+          <textarea id="comments" name="comments" rows="10" cols="80" id="comments" name="comments"></textarea>
+
+          <input type="submit" value="Submit" />
+
+        </div>
+      </form>
+    </div>
+
+
+  </div>
+</main>
+
+
+</body>
+
+<!--
+
+
+  <main>
   <div class="containter">
       <img src="https://1images.pexels.com/photos/210661/pexels-photo-210661.jpeg?cs=srgb&dl=pexels-picjumbocom-210661.jpg&fm=jpg" alt="writing hands" class="signingImage"/>
 
@@ -66,12 +121,12 @@
 </main>   
 
 </body>
-
+-->
 
 <!-- 
-You should have a page title in an h1 element with an id of title
-You should have a short explanation in a p element with an id of description
-You should have a form element with an id of survey-form
+
+
+
 Inside the form element, you are required to enter your name in an input field that has an id of name and a type of text
 Inside the form element, you are required to enter your email in an input field that has an id of email
 If you enter an email that is not formatted correctly, you will see an HTML5 validation error

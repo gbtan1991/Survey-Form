@@ -1,9 +1,5 @@
 :root{
-    --eggplant: hsla(321, 13%, 25%, 1);
-    --polished-pine: hsla(169, 22%, 49%, 1);
-    --ash-gray: hsla(140, 10%, 66%, 1);
-    --pale-silver: hsla(15, 13%, 76%, 1);
-    --desert-sand: hsla(19, 61%, 79%, 1);
+  
 }
 
 
@@ -19,15 +15,14 @@
 
 body{
     /* background */
-    background: hsl(0, 0%, 100%);
-    background: linear-gradient(45deg, var(--eggplant), var(--desert-sand));
+    background-color: var(--desert-sand);
+    
     background-repeat: no-repeat;
+    background-size: cover;
     padding: 2em;
    
 }
 
-.container{
-
-    max-width: 600px;
-    
+main{
+    margin: 10% 25%;
 }
