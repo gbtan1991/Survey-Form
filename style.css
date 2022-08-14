@@ -1,5 +1,9 @@
 :root{
-  
+    --space-cadet: hsla(227, 49%, 21%, 1);
+    --dark-cornflower-blue: hsla(222, 57%, 36%, 1);
+    --blue-yonder: hsla(224, 32%, 50%, 1);
+    --jet: hsla(27, 10%, 17%, 1);
+    --cultured: hsla(300, 9%, 96%, 1);
 }
 
 
@@ -10,19 +14,56 @@
     font-family: "Mukta", sans-serif;
 }
 
-
-
-
 body{
-    /* background */
-    background-color: var(--desert-sand);
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 2em;
-   
+  background: var(--blue-yonder);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;   
+ 
 }
 
 main{
-    margin: 10% 25%;
+    max-width: 80%;   
 }
+
+div img{
+    max-width: 500px;
+    border-radius: 20px 0 0 20px;  
+    
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.content{
+    max-width: max-content;
+}
+
+
+
+.line{
+    background-color: var(--jet);
+    width: 100%;
+    height: 5px;
+}
+
+
+
+
+.header{
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
+.header, .content{
+    background-color: var(--cultured);
+}
+
+
+
+
