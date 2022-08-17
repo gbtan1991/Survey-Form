@@ -17,23 +17,27 @@
 <main>
 
   <div class="container">
-    <div class="image-div">
+    
       <img src="https://images.pexels.com/photos/210661/pexels-photo-210661.jpeg?cs=srgb&dl=pexels-picjumbocom-210661.jpg&fm=jpg" alt="writing hand">
-    </div>
+    
 
     <div class="content">
+      <div class="header">
       <h1 id="title">Company Survey Form</h1>
       <p id="description">Kindly fill up the survey form!</p> 
+      </div>  
+      <div class="divider"></div>
 
       <form id="survey-form" action="#">
+        <div class="info">
         <ul>
-        <li><label for="name-label" id="name-label">Name</label><input type="text" name="name" id="name" placeholder="Enter your name" required/> </li>
-        <li><label for="email-label" id="email-label">Email</label><input type="email" name="email" id="email" placeholder="Enter your email" required/></li>     
-        <li><label for="number-label" id="number-label">Age(Optional)</label><input type="number" name="number" id="number" min="1" max="100" placeholder="Input your Age" /></li>
+        <li><label for="name-label" id="name-label">Name:</label><input type="text" name="name" id="name" placeholder="Enter your name" required/> </li>
+        <li><label for="email-label" id="email-label">Email:</label><input type="email" name="email" id="email" placeholder="Enter your email" required/></li>     
+        <li><label for="number-label" id="number-label">Age(Optional):</label><input type="number" name="number" id="number" min="1" max="100" placeholder="Input your Age" /></li>
         </ul>
-
+        </div>
         <label for="role-label" id="role-label">What is the role youre looking for?</label>
-
+        
         <select name="role" id="dropdown">
           <option value="">Please select an option</option>
           <option value="web-designer">Web Designer</option>
@@ -41,18 +45,29 @@
           <option value="tech-support">Tech Support</option>
           <option value="multiple-skills">Multiple Skills</option>
         </select>
-
-        <h3>Would you recommend me to your friends?</h3>
-        <input type="radio" name="recommend" value="absolutely" checked="checked" /><label for="absolutely" id="absolutely">Absolutely</label>
-        <input type="radio" name="recommend" value="maybe" /><label for="maybe" id="maybe">Maybe</label>
-        <input type="radio" name="recommend" value="not-sure" /><label for="not-sure" id="not-sure">Not sure</label>
-
-        <h3>What are your suggested topics that I can thrive to?</h3>
-        <input type="checkbox" name="suggested-topics" value="front-end" /><label for="suggested-topics" id="suggested-topics">Front-End Topics</label>
-        <input type="checkbox" name="suggested-topics" value="back-end" /><label for="suggested-topics" id="suggested-topics">Back-End Topics</label>
-        <input type="checkbox" name="suggested-topics" value="data-algorithm" /><label for="suggested-topics" id="suggested-topics">Data Algorithm</label>
-        <input type="checkbox" name="suggested-topic" value="computer-science" /><label for="suggested-topic" id="suggested-topic">Computer Science</label>
-
+        <div class="radio-checkbox">
+              <div class="radio">
+              <h3>Would you recommend me to your friends?</h3>
+              <ul>
+                <li><input type="radio" name="recommend" value="absolutely" checked="checked" /><label for="absolutely" id="absolutely">Absolutely</label></li>
+                <li><input type="radio" name="recommend" value="maybe" /><label for="maybe" id="maybe">Maybe</label></li>
+                <li><input type="radio" name="recommend" value="not-sure" /><label for="not-sure" id="not-sure">Not sure</label></li>
+              </ul>
+              
+              
+              
+              
+              </div>
+              <div class="checkbox">
+              <h3>What are your suggested topics that I can thrive to?</h3>
+              <ul>
+                <li><input type="checkbox" name="suggested-topics" value="front-end" /><label for="suggested-topics" id="suggested-topics">Front-End Topics</label></li>
+                <li><input type="checkbox" name="suggested-topics" value="back-end" /><label for="suggested-topics" id="suggested-topics">Back-End Topics</label></li>
+                <li><input type="checkbox" name="suggested-topics" value="data-algorithm" /><label for="suggested-topics" id="suggested-topics">Data Algorithm</label></li>
+                <li><input type="checkbox" name="suggested-topic" value="computer-science" /><label for="suggested-topic" id="suggested-topic">Computer Science</label></li>
+              </ul>
+            </div>
+        </div>
         <label for="comments" id="comments">Any comments or suggestions</label>
         <textarea id="comments" name="comments" rows="10" cols="80" id="comments" name="comments"></textarea>
 
