@@ -88,3 +88,7 @@ ul {
     margin: 10px;
     border: 1px solid var(--light-yellow);
 }
+
+.comments-section{
+    width: 400px;
+}

@@ -30,11 +30,17 @@
 
       <form id="survey-form" action="#">
         <div class="info">
-        <ul>
-        <li><label for="name-label" id="name-label">Name:</label><input type="text" name="name" id="name" placeholder="Enter your name" required/> </li>
-        <li><label for="email-label" id="email-label">Email:</label><input type="email" name="email" id="email" placeholder="Enter your email" required/></li>     
-        <li><label for="number-label" id="number-label">Age(Optional):</label><input type="number" name="number" id="number" min="1" max="100" placeholder="Input your Age" /></li>
-        </ul>
+        
+        <div class="form-group">
+        <label for="name-label" id="name-label">Name:</label><input type="text" name="name" id="name" placeholder="Enter your name" required/>
+        </div>
+        <div class="form-group">
+        <label for="email-label" id="email-label">Email:</label><input type="email" name="email" id="email" placeholder="Enter your email" required/> 
+        </div>
+        <div class="form-group">
+        <label for="number-label" id="number-label">Age(Optional):</label><input type="number" name="number" id="number" min="1" max="100" placeholder="Input your Age" />
+        </div>
+        
         </div>
         <label for="role-label" id="role-label">What is the role youre looking for?</label>
         
@@ -67,11 +73,13 @@
                 <li><input type="checkbox" name="suggested-topic" value="computer-science" /><label for="suggested-topic" id="suggested-topic">Computer Science</label></li>
               </ul>
             </div>
-        </div>
+            </div>
+        <div class="comments-section">
         <label for="comments" id="comments">Any comments or suggestions</label>
         <textarea id="comments" name="comments" rows="10" cols="80" id="comments" name="comments"></textarea>
-
         <input type="submit" value="Submit" id="submit"/>
+        </div>
+        
 
 
       </form>
