@@ -99,3 +99,7 @@ ul {
 .comments-section{
     width: 400px;
 }
+
+textarea{
+    max-width: 100%;
+}
