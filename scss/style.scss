@@ -1,0 +1,53 @@
+@import 'global';
+@import 'variable';
+
+body{
+    font-family: 'Mukta', sans-serif;
+    background-repeat: no-repeat;
+    background-image:url(/resources/pexels-lukas-669578.jpg);
+    background-size: cover;
+    background-position: bottom;
+    
+        
+     
+    
+
+    .main{
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+        
+        
+        .survey{
+            margin: 3.125rem auto 0 auto;
+            
+            &-header{
+                
+                text-align: center;
+
+                #title{
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                }
+
+                #description{
+                    font-style: italic;
+                }
+
+            }
+
+            &-forms{
+                
+
+                
+            }
+
+
+        }
+        
+        
+        
+    }
+}
+
+
