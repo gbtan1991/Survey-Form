@@ -11,21 +11,88 @@
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap" rel="stylesheet"> 
   <!-- FAVICON -->
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/resources/logo.svg" type="image/x-icon">
   <!-- FONTAWESOME -->
   <script src="https://kit.fontawesome.com/266a593bd6.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <main class="main">
-  
-    <div class="survey">
-      <div class="survey-header">
-        <h1 id="title">GymTech Survey Form</h1>
-        <p id="description">Thank you for taking time to help us improve</p> 
+
+  <section class="content">
+    <div class="header">
+      <h1 id="title">GenTech Web Development Coaching</h1>
+      <p id="description">Share your thoughts and shape the future</p> 
+    </div> 
+
+    <form id="survey-form" action="#">
+      <div class="info">
+          
+          <div class="form-group">
+          <label for="name-label" id="name-label">Name:</label><input type="text" name="name" id="name" placeholder="Enter your name" required/>
+          </div>
+          
+          <div class="form-group">
+          <label for="email-label" id="email-label">Email:</label><input type="email" name="email" id="email" placeholder="Enter your email" required/> 
+          </div>
+         
+          <div class="form-group">
+          <label for="number-label" id="number-label">Age(Optional):</label><input type="number" name="number" id="number" min="1" max="100" placeholder="Input your Age" />
+          </div>
+
+          <div class="form-group">
+            <label for="role-label" id="role-label">What skill are you looking for?</label>
+                <select name="role" id="dropdown">
+              <option value="">Please select an option</option>
+              <option value="web-designing">Web Designing</option>
+              <option value="web-development">Web Developement</option>
+              <option value="tech-support">Technical Support</option>
+              <option value="multiple-skills">Multiple Skills</option>
+            </select>
+
+          </div>       
       </div>
 
-  
+      <div class="topics">
+        <div class="radio-checkbox">
+          <div class="radio">
+          <h3>Would you recommend me to your friends?</h3>
+          <ul>
+            <li><input type="radio" name="recommend" value="absolutely" checked="checked" /><label for="absolutely" id="absolutely">Absolutely</label></li>
+            <li><input type="radio" name="recommend" value="maybe" /><label for="maybe" id="maybe">Maybe</label></li>
+            <li><input type="radio" name="recommend" value="not-sure" /><label for="not-sure" id="not-sure">Not sure</label></li>
+          </ul>
+        </div>
+      </div>  
+
+      <div class="checkbox">
+        <h3>What are your suggested topics that I can thrive to?</h3>
+        <ul>
+          <li><input type="checkbox" name="suggested-topics" value="front-end" /><label for="suggested-topics" id="suggested-topics">Front-End Topics</label></li>
+          <li><input type="checkbox" name="suggested-topics" value="back-end" /><label for="suggested-topics" id="suggested-topics">Back-End Topics</label></li>
+          <li><input type="checkbox" name="suggested-topics" value="data-algorithm" /><label for="suggested-topics" id="suggested-topics">Data Algorithm</label></li>
+          <li><input type="checkbox" name="suggested-topic" value="computer-science" /><label for="suggested-topic" id="suggested-topic">Computer Science</label></li>
+        </ul>
+      </div>
+
+
+      </div>
+
+      <div class="comments-section">
+        <label for="comments" id="comments">Any comments or suggestions</label>
+        <textarea id="comments" name="comments" id="comments" name="comments"></textarea>
+        </div>
+
+        <input type="submit" value="Submit" id="submit" class="submit"/>
+      
+
+    </form>
+
+
+  </section>
+
+
+
 </main>
 
 

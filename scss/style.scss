@@ -1,54 +1,103 @@
 @import 'global';
 @import 'variable';
 
-
 body{
-    background: linear-gradient(115deg, $lavender-web-bg, $dark-liver-bg), url(/resources/pexels-lukas-669578.jpg);
-    background-size: cover;
-    background-position: center;
-
     font-family: 'Mukta', sans-serif;
-    color: $black;
+    background-image: url(/resources/pexels-moose-photos-1036641.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
 
     .main{
         display: grid;
         place-content: center;
         min-height: 100vh;
+        background-image: linear-gradient(115deg, $earth-yellow-gd, $buff-gd);
 
-        .survey{
+        .content{
             display: flex;
             flex-direction: column;
             
-            &-header{
+
+            .header{
                 text-align: center;
-                
+                color: $black;
+
                 #title{
-                    font-weight: 700;
+                    font-size: 1.875rem;
                 }
 
                 #description{
                     font-style: italic;
-
                 }
             }
 
-            &-forms{
-                background-color: $dark-liver;
-                border-radius: 0.25rem;
-                padding: 20px;
-                
-                
 
-                .form-group{
+            #survey-form{
+                display: flex;
+                flex-direction: column;
+                gap: 0.625rem;
+                margin: 0.625rem;
+                padding: 3.125rem;
+                width: 37.5rem;
+                border-radius: 0.3125rem;
+                
+                background: linear-gradient(115deg, $lemon-yellow-crayola-gd, $light-yellow-gd);
+
+                .info{
                     display: flex;
                     flex-direction: column;
+                    gap: 0.625rem;
                     
-                    width: 380px;
+
+                    .form-group{
+                        display: flex;
+                        flex-direction: column;
+
+                        
+
+                        input, select{
+                            border: 0.0625rem solid $earth-yellow;
+                            border-radius: 0.3125rem;
+
+                        }
+                    }
+                }
+
+
+                .topics{
+                    margin: 0.625rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.625rem;
+                }
+
+                .comments-section{
+                    display: flex;
+                    flex-direction: column;
+
+                }
+
+                .submit{
+                    background-color: $earth-yellow;
+                    border: 0.0625rem solid $earth-yellow;
+                    color: $white;
+                    border-radius: 0.3125rem;
+                    font-size: 1.25rem;
+
+                    &:hover{
+                        background-color: $white;
+                        color: $earth-yellow;
+                    }
+                    
+
                 }
             }
         }
 
-        
+
     }
 
 
