@@ -56,6 +56,10 @@ body{
                         display: flex;
                         flex-direction: column;
 
+                        #number{
+                            -webkit-appearance: none;
+                            -moz-appearance: textfield;
+                        }
                         
 
                         input, select{
@@ -78,7 +82,13 @@ body{
                     display: flex;
                     flex-direction: column;
 
+                    #comments{
+                        resize: none;
+                    }
+
                 }
+
+                
 
                 .submit{
                     background-color: $earth-yellow;
